@@ -58,6 +58,37 @@ html > body {
     background-color: 0c0c0c;
 }
 
+html {
+    overflow-y: scroll;
+}
+
+.tabName {
+    position: relative;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-family: Sans-serif;
+    line-height: 20px;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #555 !important;
+}
+
+.nav-tabs>li>a {
+    background-color: #1c2b3a;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    background-color: #555 !important;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    background-color: #57728e !important;
+    border-color: #555 !important;
+}
+
 #main {
     position: absolute;
     display: block;
