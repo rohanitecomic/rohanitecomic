@@ -14,7 +14,7 @@ body {
 #en {
     width: 500px;
     height: 250px;
-    background-image: url(/images/en.png);
+    background-image: url(./images/en.png);
     margin-bottom: 5px;
 }
 
@@ -33,7 +33,7 @@ body {
 #fi {
     width: 500px;
     height: 250px;
-    background-image: url(/images/fi.png);
+    background-image: url(./images/fi.png);
 }
 
 #fi > a {
