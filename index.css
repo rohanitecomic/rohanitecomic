@@ -1,0 +1,49 @@
+body {
+    background-color: #333;
+    overflow: hidden;
+}
+
+#lang {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#en {
+    width: 500px;
+    height: 250px;
+    background-image: url(/images/en.png);
+    margin-bottom: 5px;
+}
+
+#en > a {
+    display: block;
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    font-size: 50px;
+    text-shadow: 0 0 10px black;
+    text-decoration: none;
+    line-height: 250px;
+}
+
+#fi {
+    width: 500px;
+    height: 250px;
+    background-image: url(/images/fi.png);
+}
+
+#fi > a {
+    display: block;
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    font-size: 50px;
+    text-shadow: 0 0 10px black;
+    text-decoration: none;
+    line-height: 250px;
+}

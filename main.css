@@ -1,146 +1,175 @@
-#LANG > * > a {
-  color:inherit;
-  text-decoration: none;
- }
-
-#EN {
-    top: 20px;
-    position: relative;
-    margin: 0 auto;
-    width: 60%;
-    height: 125px;
-    border: 1px solid black;
-    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1280px-Flag_of_the_United_Kingdom.svg.png);
-    background-size: 300px;
-    color: white;
-    text-align: center;
-    font-size: 40px;
-    font-family: Sans-serif;
-    line-height: 125px;
-    text-shadow: 0 0 5px black,
-        0 0 5px black,
-        0 0 5px black;
-}
-
-#FI {
-    top: 20px;
-    position: relative;
-    margin: 0 auto;
-    width: 60%;
-    height: 125px;
-    border: 1px solid black;
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_Finland.svg/2000px-Flag_of_Finland.svg.png);
-    background-size: 240px;
-    color: white;
-    text-align: center;
-    font-size: 40px;
-    font-family: Sans-serif;
-    line-height: 125px;
-    text-shadow: 0 0 5px black,
-        0 0 5px black,
-        0 0 5px black;
-}
-
-#LANG {
-    position: absolute;
-    display: block;
-    margin: auto;
-     top: 0;
-     right: 0;
-     bottom: 0;
-     left: 0;
-    height: 300px;
-    width: 500px;
-    border: 2px solid black;
-}
-
-html > body {
-    background-color: 0c0c0c;
-}
-
 html {
-    overflow-y: scroll;
+    font-family: sans-serif;
 }
 
-.tabName {
-    position: relative;
-    margin: 0 auto;
-    color: white;
+body {
+    outline: 10px solid black;
+    outline-offset: 0;
+    background-image: url(bgGradient.png);
+    background-repeat: repeat-x;
+    background-color: #111;
+}
+
+/**/
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 50px;
     text-align: center;
-    font-size: 20px;
-    font-family: Sans-serif;
-    line-height: 20px;
+    vertical-align: middle;
+    line-height: 50px;
 }
 
-.nav-tabs {
-    border-bottom: 1px solid #555 !important;
-}
-
-.nav-tabs>li>a {
-    background-color: #1c2b3a;
-}
-
-.nav>li>a:focus, .nav>li>a:hover {
-    background-color: #555 !important;
-}
-
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
-    background-color: #57728e !important;
-    border-color: #555 !important;
-}
-
-#main {
-    position: absolute;
-    display: block;
-    margin: auto;
-         top: 0;
-         right: 0;
-         bottom: 0;
-         left: 0;
-    width: 80%;
-    bottom: auto;
-    min-height: 100%;
-    max-width: 1300px;
-    border: 2px solid black;
-    background-color: #1c1c1c;
-    color: white;
-}
-
-h1 {
-    display: inline;
+.navbar a {
     float: left;
-    padding-bottom: 45px;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    width: 25%;
+    height: 50px
 }
 
-.pageName {
-    margin-top: 50px;
-    position: absolute;
-    font-size: 25px;
-}
-
-.aboutSection {
-    margin-top: 50px;
-    position: absolute;
-    font-size: 15px;
-    padding-bottom: 25px;
+.navbar a:hover {
+    text-decoration: none;
 }
 
 .dropdown {
-    margin: 25px 0 0 10px;
-    display: inline;
     float: left;
+    width: 25%;
 }
 
-#comic, #about {
-    padding: 0 25 0 25;
+.dropbtn {
+    font-size: 16px;
+    border: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+    height: 50px;
+    width: 100%;
+    
 }
 
-#comic > a > img {
-    max-width:100%;
-    padding-bottom: 25px;
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #047;
 }
 
-#about > * > img {
-    max-width:30%;
-    padding-bottom: 25px;
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #222;
+    z-index: 1;
+    
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding-left: 12px;
+    padding-right: 12px;
+    text-decoration: none;
+    display: block;
+    background-color: #222;
+    width: 100%;
+}
+
+.dropdown-content a:hover {
+    background-color: #444;
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    width: 20%;
+}
+
+/**/
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+h1 {
+    display: inline-block;
+    width: 100%;
+    color: white;
+    text-align: center;
+    line-height: 70%;
+    font-size: 50px;
+}
+
+#header {
+    width: 100%;
+}
+
+#banner {
+    width: 100%;
+    height: 100px;
+    background-color: #666;
+}
+
+#section {
+    height: 50px;
+    background-color: #999;
+}
+
+/* #comic {
+    display: inline-block;
+    float: left;
+    width: 50%;
+    background-color: #333;
+    text-align: center;
+} 
+
+#about {
+    display: inline-block;
+    float: right;
+    width: 50%;
+    background-color: #333;
+    text-align: center;
+} */
+
+.pageInfo {
+    width: 100%;
+    height: 50px;
+}
+
+.aboutInfo > p, h3 {
+    color: white;
+    padding-left: 25px;
+    padding-top: 10px;
+}
+
+.pageInfo > h2 {
+    color: white;
+    margin: 20px 0 0 0;
+    font-size: 25px;
+    text-align: center;
+}
+
+.pageImage {
+    width: 100%;
+}
+
+.pageImage img[value="normal"] {
+    width: 100%;
+    max-width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pageImage img[value="wide"] {
+    width: 100%;
+    max-width: 98%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
