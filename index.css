@@ -1,5 +1,5 @@
 body {
-    background-color: #1FBDE0;
+    background-color: #333;
     overflow: hidden;
 }
 
@@ -9,7 +9,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(./images/bg.png);
+    background-image: url(./images/bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
 }
