@@ -5,7 +5,7 @@ html {
 body {
     outline: 10px solid black;
     outline-offset: 0;
-    background-image: url(bgGradient.png);
+    background-image: url(./images/bgGradient.png);
     background-repeat: repeat-x;
     background-color: #111;
 }
@@ -28,7 +28,7 @@ body {
     color: white;
     text-decoration: none;
     width: 25%;
-    height: 50px
+    height: 50px;
 }
 
 .navbar a:hover {
@@ -69,9 +69,9 @@ body {
     padding-left: 12px;
     padding-right: 12px;
     text-decoration: none;
-    display: block;
     background-color: #222;
     width: 100%;
+    display: block;
 }
 
 .dropdown-content a:hover {
